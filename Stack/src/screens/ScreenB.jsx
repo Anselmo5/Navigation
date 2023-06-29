@@ -25,7 +25,7 @@ export function ScreenB() {
  const styles = StyleSheet.create ({
     container:{
         flex:1,
-        backgroundColor:"green",
+        backgroundColor:"red",
         justifyContent:"center",
 
     },

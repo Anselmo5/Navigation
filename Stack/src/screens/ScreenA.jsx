@@ -2,12 +2,12 @@ import React from 'react';
 import { View,StyleSheet,Pressable,Text } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { ScreenB } from './ScreenB';
 
-export function ScreenA( ) {
+
+export function ScreenA({navigation} ) {
   return (
     <View style={styles.container}>
-        <Pressable style ={styles.btn}>
+        <Pressable style ={styles.btn} onPress={()=> navigation.navigate('Tela2')}>
             <View>
                 <Text style={styles.text}>
                         Click Aqui
